@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		65A21B182AF6D1050036A3EE /* DurableTestHarness in Frameworks */ = {isa = PBXBuildFile; productRef = 65A21B172AF6D1050036A3EE /* DurableTestHarness */; };
 		65E0ACD12AF50783007215AB /* DemoMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E0ACD02AF50783007215AB /* DemoMainView.swift */; };
 		65E0ACD32AF50812007215AB /* DemoWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E0ACD22AF50812007215AB /* DemoWelcomeView.swift */; };
+		65E55D952BF4129F00D91495 /* DurableTestHarness in Frameworks */ = {isa = PBXBuildFile; productRef = 65E55D942BF4129F00D91495 /* DurableTestHarness */; };
 		65EF98512AF939F3003F0372 /* AppTestSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EF98502AF939F3003F0372 /* AppTestSettingsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65A21B182AF6D1050036A3EE /* DurableTestHarness in Frameworks */,
+				65E55D952BF4129F00D91495 /* DurableTestHarness in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +103,7 @@
 			name = Demo;
 			packageProductDependencies = (
 				65A21B172AF6D1050036A3EE /* DurableTestHarness */,
+				65E55D942BF4129F00D91495 /* DurableTestHarness */,
 			);
 			productName = Demo;
 			productReference = 653BC7002ADCA8A00020431F /* Demo.app */;
@@ -131,7 +134,7 @@
 			);
 			mainGroup = 653BC6F72ADCA8A00020431F;
 			packageReferences = (
-				65A21B162AF6D1050036A3EE /* XCLocalSwiftPackageReference ".." */,
+				65E55D932BF4129F00D91495 /* XCRemoteSwiftPackageReference "DurableTestHarness" */,
 			);
 			productRefGroup = 653BC7012ADCA8A00020431F /* Products */;
 			projectDirPath = "";
@@ -384,16 +387,25 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		65A21B162AF6D1050036A3EE /* XCLocalSwiftPackageReference ".." */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ..;
+/* Begin XCRemoteSwiftPackageReference section */
+		65E55D932BF4129F00D91495 /* XCRemoteSwiftPackageReference "DurableTestHarness" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/durablebrandsoftware/DurableTestHarness";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		65A21B172AF6D1050036A3EE /* DurableTestHarness */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = DurableTestHarness;
+		};
+		65E55D942BF4129F00D91495 /* DurableTestHarness */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65E55D932BF4129F00D91495 /* XCRemoteSwiftPackageReference "DurableTestHarness" */;
 			productName = DurableTestHarness;
 		};
 /* End XCSwiftPackageProductDependency section */
